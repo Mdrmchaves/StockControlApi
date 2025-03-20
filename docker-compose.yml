@@ -1,0 +1,35 @@
+services:
+  sql_server_stock:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=MssqlServer19@
+      - MSSQL_PID=Express
+    ports:
+      - "1433:1433"
+    healthcheck:
+      test: ["CMD", "/opt/mssql-tools18/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "MssqlServer19@", "-C", "-Q", "SELECT 1"]
+      interval: 20s
+      timeout: 10s
+      retries: 10
+    networks:
+      - stockcontrol-network
+
+  api:
+    image: ${DOCKER_REGISTRY-}stockcontrolapiweb
+    build:
+      context: .
+      dockerfile: StockControlApi.Web/Dockerfile
+    ports:
+      - "5000:80"
+    depends_on:
+      sql_server_stock:
+        condition: service_healthy
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - stockcontrol-network
+
+networks:
+  stockcontrol-network:
+    driver: bridge

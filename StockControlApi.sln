@@ -1,9 +1,51 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35806.99 d17.13
+VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockControlApi.Core", "StockControlApi.Core\StockControlApi.Core.csproj", "{ABE23459-F2FB-4149-AFDD-93687996FA3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockControlApi.Application", "StockControlApi.Application\StockControlApi.Application.csproj", "{36681388-729D-44E9-A0A6-D0EA2D799055}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockControlApi.Infrastructure", "StockControlApi.Infrastructure\StockControlApi.Infrastructure.csproj", "{C084AA72-6D66-453A-9F11-933A7FDCBC71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockControlApi.Web", "StockControlApi.Web\StockControlApi.Web.csproj", "{2F7EC54E-6DC0-4080-A2F5-E7D702B135A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockControlApi.Tests", "StockControlApi.Tests\StockControlApi.Tests.csproj", "{F831E66E-8752-4C3B-85C2-62EF1AF017F8}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABE23459-F2FB-4149-AFDD-93687996FA3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABE23459-F2FB-4149-AFDD-93687996FA3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABE23459-F2FB-4149-AFDD-93687996FA3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABE23459-F2FB-4149-AFDD-93687996FA3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36681388-729D-44E9-A0A6-D0EA2D799055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36681388-729D-44E9-A0A6-D0EA2D799055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36681388-729D-44E9-A0A6-D0EA2D799055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36681388-729D-44E9-A0A6-D0EA2D799055}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C084AA72-6D66-453A-9F11-933A7FDCBC71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C084AA72-6D66-453A-9F11-933A7FDCBC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C084AA72-6D66-453A-9F11-933A7FDCBC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C084AA72-6D66-453A-9F11-933A7FDCBC71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F7EC54E-6DC0-4080-A2F5-E7D702B135A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F7EC54E-6DC0-4080-A2F5-E7D702B135A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F7EC54E-6DC0-4080-A2F5-E7D702B135A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F7EC54E-6DC0-4080-A2F5-E7D702B135A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F831E66E-8752-4C3B-85C2-62EF1AF017F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F831E66E-8752-4C3B-85C2-62EF1AF017F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F831E66E-8752-4C3B-85C2-62EF1AF017F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F831E66E-8752-4C3B-85C2-62EF1AF017F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

@@ -1,0 +1,9 @@
+services:
+  api:
+    volumes:
+      - ./StockControlApi.Web:/app
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "5001:80"  # Mapeia uma porta diferente para evitar conflitos
